@@ -1,0 +1,409 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 1. Write a C program to find maximum between two numbers.\par
+#include<stdio.h>\par
+void main()\{\par
+int a,b;\par
+printf("enter the two numbers:\\n");\par
+scanf("%d%d",&a,&b);\par
+if(a>>b)\{\par
+printf("the number %d is greater than %d",a,b);\par
+
+\pard\sa200\sl240\slmult1\}\par
+
+\pard\sa200\sl276\slmult1 else\{\par
+printf("the number %d is greater than %d",b,a);\par
+\}\par
+\}\par
+2. Write a C program to find maximum between three numbers.\par
+#include<stdio.h>\par
+int main()\{\par
+int a,b,c;\par
+printf("enter the numbers to be compared:\\n");\par
+scanf("%d%d%d",&a,&b,&c);\par
+if ((a>b)&&(a>c))\par
+\{\par
+printf("the number %d is greater than %d and %d",a,b,c);\par
+\}\par
+else if ((b>a)&&(b>c))\par
+\{\par
+printf("the number %d is greater than %d and %d",b,a,c);\par
+\}\par
+else if ((c>a)&&(c>b))\par
+\{\par
+printf("the number %d is greater than %d and %d",c,a,b);\par
+\}\par
+else \par
+\{\par
+printf("all are equal");\par
+\}\par
+return 0;\par
+\} \par
+3. Write a C program to check whether a number is negative, positive or zero\par
+#include<stdio.h>\par
+int main()\{\par
+int a;\par
+printf("enter the number to be verified:\\n");\par
+scanf("%d",&a);\par
+if (a>0)\par
+\{\par
+printf("the number is a positive number");\par
+\}\par
+else if (a=0)\par
+\{\par
+printf("the number is zero");\par
+\}\par
+else \par
+\{\par
+printf("the number is negative number");\par
+\}\par
+return 0;\par
+\}\par
+4. Write a C program to check whether a number is divisible by 5 and 11 or not\par
+#include<stdio.h>\par
+void main()\{\par
+int a;\par
+printf("enter the number to be verified:\\n");\par
+scanf("%d",&a);\par
+if (a % 55==0)\par
+\{\par
+printf("the number is divisible by 5 and 11");\par
+\}\par
+else\par
+\{\par
+printf("the number is not divisible by 5 and 11");\par
+\}\par
+\}\par
+5. Write a C program to check whether a number is even or odd.\par
+#include<stdio.h>\par
+void main()\{\par
+int x;\par
+printf("enter the number to be verified:\\n");\par
+scanf("%d",&x);\par
+if (x % 2==0)\par
+\{\par
+printf("the number is even");\par
+\}\par
+else\par
+\{\par
+printf("the number is odd");\par
+\}\par
+\}\par
+6. Write a C program to check whether a year is leap year or not\par
+#include<stdio.h>\par
+void main()\{\par
+int a;\par
+printf("enter the year:\\n");\par
+scanf("%d",&a);\par
+if ((a % 4==0)&&(a % 100!=0))\par
+\{\par
+printf("its a leap year");\par
+\}\par
+else if((a % 100==0)&&(a % 400==0)) \par
+\{\par
+printf("its a leap year");\par
+\}\par
+else\par
+\{\par
+printf("its not a leap year");\par
+\}\par
+\}\par
+7. Write a C program to check whether a character is alphabet or not.\par
+#include<stdio.h>\par
+void main()\par
+\{\par
+char c;\par
+printf("enter the character:");\par
+scanf("%c",&c);\par
+if (((c>='a') && (c<='z')) || ((c>='A') && (c<='Z')))\par
+\{\par
+printf("the character is alphabet");\par
+\}\par
+else\par
+\{\par
+printf("the character is not an alphabet");\par
+\}\par
+\}\par
+8. Write a C program to input any alphabet and check whether it is vowel or consonant.\par
+#include<stdio.h>\par
+\par
+void main()\par
+\{\par
+char ch;\par
+printf("enter the character to be verified:");\par
+scanf("%c",&ch);\par
+if (ch == 'a'||ch == 'e'||ch == 'i'||ch == 'o'||ch == 'u')\par
+\{\par
+printf("%c character is a vowel",ch);\par
+\}\par
+else\par
+\{\par
+printf("%c character is a consonent",ch);\par
+\}\par
+\}\par
+9. Write a C program to input any character and check whether it is alphabet, digit or special \par
+character\par
+#include<stdio.h>\par
+\par
+void main()\par
+\{\par
+char op;\par
+printf("enter the character to be sorted:");\par
+scanf("%c",&op);\par
+if((op>='a'&&op<='z')||(op>='A'&&op<='Z'))\par
+\{\par
+printf("%c is an alphabet",op);\par
+\}\par
+else if(op>='0'&&op<='9')\par
+\{\par
+printf("%c is a number",op);\par
+\}\par
+else \par
+\{\par
+printf("%c is a special character",op);\par
+\}\par
+\}\par
+10. Write a C program to check whether a character is uppercase or lowercase alphabet.\par
+#include<stdio.h>\par
+void main()\par
+\{\par
+int ch;\par
+printf("enter the alphabet:");\par
+scanf("%c",&ch);\par
+if(ch>='a' || ch<='z')\par
+\{\par
+printf("the alphabet is lower case");\par
+\}\par
+else\par
+\{\par
+printf("the alphabet is upper case");\par
+\} \par
+\}\par
+11. Write a C program to input week number and print week day.\par
+#include<stdio.h>\par
+\par
+void main()\par
+\{\par
+int W;\par
+printf("enter the day:");\par
+scanf("%d",&W);\par
+switch (W)  \{\par
+\par
+case 1:\par
+printf("sunday");\par
+break;\par
+case 2:\par
+printf("monday");\par
+break;\par
+case 3:\par
+printf("tuesday");\par
+break;\par
+case 4:\par
+printf("wednesday");\par
+break;\par
+case 5:\par
+printf("thursday");\par
+break;\par
+case 6:\par
+printf("friday");\par
+break;\par
+case 7:\par
+printf("saturday");\par
+break;\par
+default:\par
+printf("the input is invalid");\par
+break;\par
+\}\par
+\}\par
+12. Write a C program to input month number and print number of days in that month.\par
+#include<stdio.h>\par
+\par
+void main()\par
+\{\par
+int m;\par
+printf("enter the number of month:");\par
+scanf("%d",&m);\par
+if ((m==1)||(m==3)||(m==5)||(m==7)||(m==8)||(m==10)||(m==12))\par
+\{\par
+printf("the number of days on that month is 31");\par
+\}\par
+else if (m==2)\par
+\{\par
+printf("the number of days in that month is 28");\par
+\}\par
+else\par
+\{\par
+printf("the number of days in that month is 30");\par
+\}\par
+\}\par
+13. Write a C program to count total number of notes in given amount.\par
+#include<stdio.h>\par
+\par
+void main()\par
+\{\par
+int amount;\par
+int notes_500,notes_100,notes_50,notes_10,notes_05,notes_01;\par
+printf("enter the amount:");\par
+scanf("%d",&amount);\par
+\par
+notes_500 = amount/500;\par
+amount = amount % 500;\par
+\par
+notes_100 = amount/100;\par
+amount = amount % 100;\par
+\par
+notes_50 = amount/50;\par
+amount = amount % 50;\par
+\par
+notes_10 = amount/10;\par
+amount = amount % 10;\par
+\par
+notes_05 = amount/5;\par
+amount = amount % 5;\par
+\par
+notes_01 = amount/1;\par
+amount = amount % 1;\par
+\par
+printf("\\nnumber of 500 {{\field{\*\fldinst{HYPERLINK notes:%d\\\\nnumber }}{\fldrslt{notes:%d\\nnumber\ul0\cf0}}}}\f0\fs22  of 100 {{\field{\*\fldinst{HYPERLINK notes:%d\\\\nnumber }}{\fldrslt{notes:%d\\nnumber\ul0\cf0}}}}\f0\fs22  of 50 {{\field{\*\fldinst{HYPERLINK notes:%d\\\\nnumber }}{\fldrslt{notes:%d\\nnumber\ul0\cf0}}}}\f0\fs22  of 10 {{\field{\*\fldinst{HYPERLINK notes:%d\\\\nnumber }}{\fldrslt{notes:%d\\nnumber\ul0\cf0}}}}\f0\fs22  of 5 coins :%d\\nnumber of 1 coins:%d\\n",notes_500,notes_100,notes_50,notes_10,notes_05,notes_01);\par
+\}\par
+14. Write a C program to input angles of a triangle and check whether triangle is valid or not.\par
+#include<stdio.h>\par
+void main()\par
+\{\par
+int a,b,c;\par
+printf("enter the three angles of the triangle:\\n");\par
+scanf("%d%d%d",&a,&b,&c);\par
+if (a + b + c == 180)\par
+\{\par
+printf("the triangle is valid for the respective angles");\par
+\}\par
+else\par
+\{\par
+printf("the triangle is not valid for the given angles");\par
+\}\par
+\}\par
+15. Write a C program to input all sides of a triangle and check whether triangle is valid or not.\par
+#include<stdio.h>\par
+\par
+void main()\par
+\{\par
+int a,b,c;\par
+printf("enter the sides of the triangle:\\n");\par
+scanf("%d%d%d",&a,&b,&c);\par
+if ((a + b > c)&&(a + c > b)&&(b + c > a))\par
+\{\par
+printf("the respective sides form a triangle");\par
+\}\par
+else\par
+\{\par
+printf("the sides doesn't form a triangle");\par
+\}\par
+\}\par
+16. Write a C program to check whether the triangle is equilateral, isosceles or scalene triangle.\par
+#include<stdio.h>\par
+\par
+void main()\par
+\{\par
+int a,b,c;\par
+printf("enter the sides of the triangle:\\n");\par
+scanf("%d%d%d",&a,&b,&c);\par
+if ((a + b > c)&&(a + c > b)&&(b + c > a))\par
+\{\par
+printf("the respective sides form a triangle");\par
+if (a == b == c)\par
+\{\par
+printf("the triangle is equilateral");\par
+\}\par
+else if((a==b)||(b==c)||(c==a))\par
+\{\par
+printf("the triangle is isosceles");\par
+\}\par
+else\par
+\{\par
+printf("the triangle is scalene");\par
+\}\par
+\}\par
+else\par
+\{\par
+printf("the sides doesn't form a triangle ");\par
+\}\par
+\}\par
+17. Write a C program to find all roots of a quadratic equation.\par
+#include<stdio.h>\par
+#include<math.h>\par
+void main()\par
+\{\par
+int a,b,c;\par
+float x1,x2;\par
+printf("enter the quotients of the quadratic equation:\\n");\par
+scanf("%d%d%d",&a,&b,&c);\par
+x1 = (-b+sqrt(b*b-4*a*c))/2*a;\par
+x2 = (-b-sqrt(b*b-4*a*c))/2*a; \par
+printf("the roots of the quadratic equation are %f and %f",x1,x2);\par
+\}\par
+18. Write a C program to calculate profit or loss.\par
+#include<stdio.h>\par
+\par
+void main()\par
+\{\par
+int cp,sp,min;\par
+printf("enter the cost price and selling price:\\n");\par
+scanf("%d%d",&cp,&sp);\par
+if (cp - sp > 0)\par
+\{\par
+printf("loss is %d",cp-sp);\par
+\}\par
+else if (sp - cp > 0)\par
+\{\par
+printf("profit is %d",sp-cp);\par
+\}\par
+else\par
+\{\par
+printf("no profit no loss");\par
+\}\par
+19. Write a C program to input marks of five subjects Physics, Chemistry, Biology, Mathematics \par
+and Computer. Calculate percentage and grade according to following:\par
+#include<stdio.h>\par
+\par
+void main()\par
+\{\par
+int physics,chemistry,biology,mathematics,computer,subjects,percent;\par
+\par
+printf("enter the marks of physics,chemistry,biology,mathematics and computer:\\n");\par
+scanf("%d%d%d%d%d",&physics,&chemistry,&biology,&mathematics,&computer);\par
+\par
+subjects = physics+chemistry+biology+mathematics+computer;\par
+percent = subjects/5;\par
+\par
+printf("the percentage of the marks is %d",percent);\par
+\par
+if (percent>=90)\par
+\{\par
+printf("grade A");\par
+\}\par
+else if (percent>=80)\par
+\{\par
+printf("grade B");\par
+\}\par
+else if (percent>=70)\par
+\{\par
+printf("grade C");\par
+\}\par
+else if (percent>=60)\par
+\{\par
+printf("grade D");\par
+\}\par
+else if (percent>=40)\par
+\{\par
+printf("grade E");\par
+\}\par
+else (percent<40)\par
+\{\par
+printf("grade F");\par
+\}\par
+\}\par
+\par
+\par
+}
+ 
